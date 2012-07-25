@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="69">
+  <logicalFolder name="root" displayName="root" projectFiles="true">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <itemPath>sc.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true"
+                   kind="SOURCE_LOGICAL_FOLDER">
+      <logicalFolder name="integ2d" displayName="integ2d" projectFiles="true">
+        <logicalFolder name="triangulation"
+                       displayName="triangulation"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>src/integ2d/triangulation/setriang.f</itemPath>
+          <itemPath>src/integ2d/triangulation/triangulation.f</itemPath>
+        </logicalFolder>
+        <logicalFolder name="twodq"
+                       displayName="twodq"
+                       projectFiles="true"
+                       kind="SOURCE_LOGICAL_FOLDER">
+          <itemPath>src/integ2d/twodq/basout.f</itemPath>
+          <itemPath>src/integ2d/twodq/greatr.f</itemPath>
+          <itemPath>src/integ2d/twodq/hpdel.f</itemPath>
+          <itemPath>src/integ2d/twodq/hpins.f</itemPath>
+          <itemPath>src/integ2d/twodq/stack.h</itemPath>
+          <itemPath>src/integ2d/twodq/twodq.f</itemPath>
+          <itemPath>src/integ2d/twodq/xerrwv.f</itemPath>
+        </logicalFolder>
+        <itemPath>src/integ2d/integ2d.f</itemPath>
+      </logicalFolder>
+      <logicalFolder name="superconductivity"
+                     displayName="superconductivity"
+                     projectFiles="true">
+        <itemPath>src/superconductivity/blockdat.f</itemPath>
+        <itemPath>src/superconductivity/esef.f</itemPath>
+        <itemPath>src/superconductivity/fermi.f</itemPath>
+        <itemPath>src/superconductivity/spec.f</itemPath>
+        <itemPath>src/superconductivity/tcritical.f</itemPath>
+      </logicalFolder>
+      <itemPath>src/superconductivity/cec.f</itemPath>
+      <itemPath>src/findEsEf.f</itemPath>
+      <itemPath>main.c</itemPath>
+      <itemPath>src/scdos.f</itemPath>
+      <itemPath>src/surf.f</itemPath>
+      <itemPath>src/tcef.f</itemPath>
+      <itemPath>src/vanHove.f</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src/integ2d</Elem>
+    <Elem>src/superconductivity</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <commandLine>-lblas -llapack</commandLine>
+        </cTool>
+        <fortranCompilerTool>
+          <commandLine>-lblas -llapack</commandLine>
+        </fortranCompilerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <compilerSet>GNU|GNU</compilerSet>
+        <platform>2</platform>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-lblas -llapack</commandLine>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-lblas -llapack</commandLine>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
