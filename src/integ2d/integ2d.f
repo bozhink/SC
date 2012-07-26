@@ -27,29 +27,3 @@ c 'iflag'  -- output; error flag (see twodq)
      *  nevals,iflag,dat,iwork)
       return
       end
-
-!
-!
-!
-!
-!c Test functions
-!      double precision function ss(x,y)
-!      double precision x,y
-!      ss=(x*x+y*y)
-!      return
-!      end
-!
-!      subroutine test1()
-!         implicit none
-!         double precision ss, eps, res
-!         integer nevals, iflag
-!         external ss
-!         eps=1.d-3
-!         call integ2d(ss,eps,res,nevals,iflag)
-!         print*,'test1 ',eps
-!         print*,'test1 ',res
-!         print*,'test1 ',nevals
-!         print*,'test1 ',iflag
-!         return
-!      end
-

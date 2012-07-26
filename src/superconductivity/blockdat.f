@@ -13,7 +13,6 @@ c Triangulation grid
       common /TRIANGXY/ x, y
 c Common block Superconductivity Bloch-Huckel hamiltonian
       common /SCBHH/ H,EYE4,w,work
-      common /BHPARAMS/ Ed,Es,Ep,Tpd,Tsp,Tpp
 c
 c DATA part
 c
@@ -24,13 +23,6 @@ c Unity matrix
      *           0.d0, 1.d0, 0.d0, 0.d0,
      *           0.d0, 0.d0, 1.d0, 0.d0,
      *           0.d0, 0.d0, 0.d0, 1.d0/
-c Hamiltonian parameters
-      data Ed /0.d0/
-      data Es /3.934d0/
-      data Ep /-1.d0/
-      data Tpd /1.5d0/
-      data Tsp /2.d0/
-      data Tpp /0.2d0/
       save
       end
       
