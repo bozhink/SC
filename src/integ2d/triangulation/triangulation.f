@@ -9,7 +9,7 @@ c 'a0' -- input; left boundary for variable x
 c 'a1' -- input; right boundary for variable x
 c 'b0' -- input; left boundary for variable y
 c 'b1' -- input; right boundary for variable y
-c 'n   -- input; half the number of simplices
+c 'n'  -- input; half the number of simplices
 c 'x'  -- output; array(3, 2*n**2); x-coordinates for triangles' verteces
 c 'y'  -- output; array(3, 2*n**2); y-coordinates for triangles' verteces
       integer n, i, j
